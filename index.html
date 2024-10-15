@@ -1,1 +1,79 @@
-<h1>Gustavo_Alpaca<h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .content {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Personal</h1>
+    </header>
+    <div class="content">
+        <h2>Datos Generales</h2>
+        <p>Nombre: [Gustavo Adolfo Alpaca Ticona]</p>
+        <p>Carrera: [Computer Science]</p>
+        <h3>IVU</h3>
+        <ul>
+            <li>Curso 1</li>
+            <li>Curso 2</li>
+            <li>Curso 3</li>
+        </ul>
+        <h3>daniela y jaime</h3>
+        <ul>
+            <li><a href="http://pagina-de-compañero1.com" target="_blank">Compañero 1</a></li>
+            <li><a href="http://pagina-de-compañero2.com" target="_blank">Compañero 2</a></li>
+            <li><a href="http://pagina-de-compañero3.com" target="_blank">Compañero 3</a></li>
+        </ul>
+    </div>
+    <script>
+        // JavaScript para darle un poco de interactividad
+        document.addEventListener("DOMContentLoaded", function() {
+            const header = document.querySelector("header");
+            header.addEventListener("mouseover", function() {
+                header.style.backgroundColor = "#45a049";
+            });
+            header.addEventListener("mouseout", function() {
+                header.style.backgroundColor = "#4CAF50";
+            });
+        });
+    </script>
+</body>
+</html>
