@@ -20,7 +20,7 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #4CAF50;
+    background-color: #bc0000;
     color: white;
     text-align: center;
     padding: 20px;
@@ -49,7 +49,7 @@ ul {
 }
 
 ul li {
-    background-color: #e7f3e7;
+    background-color: #fff6f6;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
@@ -57,12 +57,12 @@ ul li {
 }
 
 ul li:hover {
-    background-color: #d4e9d4;
+    background-color: #fff6f6;
 }
 
 /* Enlaces */
 a {
-    color: #4CAF50;
+    color: #bc0000;
     text-decoration: none;
     font-weight: bold;
 }
