@@ -3,75 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0F0F0F;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
-        header {
-            background-color: #000000;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .content {
-            margin-top: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        a {
-            color: #bc0000;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Gustavo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página Personal</h1>
-    </header>
-    <div class="content">
-        <h2>Datos Generales</h2>
-        <p>Nombre: Gustavo Adolfo Alpaca Ticona</p>
-        <p>Carrera: Computer Science</p>
-        <h3>CURSOS:</h3>
-        <ul>
-            <li>IVU</li>
-        </ul>
-        <h3>COMPAÑEROS:</h3>
-        <ul>
-            <li><a href="https://pompompudin.github.io/Daniela-Sofia-Fernandez-Galdos/" target="_blank">Daniela Fernandez</a></li>
-            <li><a href="http://pagina-de-compañero2.com" target="_blank">Jaime Gaymer</a></li>
-            <li><a href="http://pagina-de-compañero3.com" target="_blank">Compañero 3</a></li>
-        </ul>
+    <div class="container">
+        <header>
+            <h1>My own pagea</h1>
+        </header>
+        <section class="about">
+            <h2>about</h2>
+            <p>Name: Gustavo ALPaca</p>
+            <p>Career: Computer Science</p>
+        </section>
+        <section class="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li>Curso 1</li>
+                <li>Curso 2</li>
+                <li>Curso 3</li>
+            </ul>
+        </section>
+        <section class="group">
+            <h2>Mates</h2>
+            <ul>
+                <li>Daniela Fernandez - <a href="https://pompompudin.github.io/Daniela-Sofia-Fernandez-Galdos/" target="_blank">Visitar página</a></li>
+                <li>Jaime - <a href="https://jaimefriedrich.github.io/Friedrich-Jaime-Rodriguez-Canales/" target="_blank">Visitar página</a></li>
+                <li>Compañero 3 - <a href="https://pagina-de-compañero3.com" target="_blank">Visitar página</a></li>
+            </ul>
+        </section>
     </div>
-    <script>
-        // JavaScript para darle un poco de interactividad
-        document.addEventListener("DOMContentLoaded", function() {
-            const header = document.querySelector("header");
-            header.addEventListener("mouseover", function() {
-                header.style.backgroundColor = "#bc0000";
-            });
-            header.addEventListener("mouseout", function() {
-                header.style.backgroundColor = "#bc0000";
-            });
-        });
-    </script>
 </body>
 </html>
+    
