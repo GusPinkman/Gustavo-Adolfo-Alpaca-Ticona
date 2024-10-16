@@ -51,26 +51,17 @@ body {
 
 .section-content {
     margin: 60px;
-    display: none;
+    display: none; /* Ocultar las secciones por defecto */
 }
 
 footer {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
     text-align: center;
     color: grey;
     font-size: 14px;
+    margin-top: 50px;
 }
 
-/* Mostrar las secciones al hacer clic */
-.section-content:target {
+/* Mostrar la sección activa */
+.active {
     display: block;
-}
-
-/* Ajuste de las redes sociales */
-footer p {
-    margin-top: 80px;
-    font-size: 12px;
 }
