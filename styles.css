@@ -49,9 +49,24 @@ body {
     font-size: 18px;
 }
 
+.discs-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.discs-container img {
+    max-width: 200px;
+    height: auto;
+}
+
 .section-content {
     margin: 60px;
     display: none; /* Ocultar las secciones por defecto */
+    padding: 20px;
+    background-color: black;
+    border: 1px solid white;
 }
 
 footer {
