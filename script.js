@@ -1,8 +1,9 @@
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    if (menu.style.right === '-300px' || menu.style.right === '') {
-        menu.style.right = '0';
+// script.js
+document.getElementById('menuToggle').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.left === '-250px') {
+        sidebar.style.left = '0';
     } else {
-        menu.style.right = '-300px';
+        sidebar.style.left = '-250px';
     }
-}
+});
