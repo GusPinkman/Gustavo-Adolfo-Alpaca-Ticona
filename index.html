@@ -3,60 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniela's Page</title>
+    <title>Mi Página</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <div class="menu-toggle" id="menuToggle">
+        <div class="hamburger"></div>
     </div>
+    
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#mates">Mates</a></li>
+        </ul>
+    </nav>
 
-    <div class="menu" id="menu">
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#mates">Mates</a>
-    </div>
-
-    <div class="content">
-        <div class="cds">
-            <img src="disco1.png" alt="CD 1">
-            <img src="disco2.png" alt="CD 2">
-            <img src="disco3.png" alt="CD 3">
-        </div>
-    </div>
-
+    <main>
+        <!-- Sección de información general -->
+        <section id="about" class="section-content">
+            <h2>Datos Generales</h2>
+            <p>Nombre: Daniela Sofia Fernández Galdos</p>
+            <p>Edad: 18 años</p>
+            <p>Ciudad: Arequipa</p>
+            <p>Email: <a href="mailto:daniela.fernandez@ucsp.edu.pe">daniela.fernandez@ucsp.edu.pe</a></p>
+        </section>
+        
+        <!-- Sección de cursos -->
+        <section id="courses" class="section-content">
+            <h2>Courses</h2>
+            <p>IVU</p>
+        </section>
+        
+        <!-- Sección de compañeros -->
+        <section id="mates" class="section-content">
+            <h2>Mates</h2>
+            <ul>
+                <li><a href="https://pompompudin.github.io/Daniela-Sofia-Fernandez-Galdos/" target="_blank">Dan</a></li>
+                <li><a href="https://pagina-de-tu-compañero2.com" target="_blank">Compañero 2</a></li>
+                <li><a href="https://pagina-de-tu-compañero3.com" target="_blank">Compañero 3</a></li>
+            </ul>
+        </section>
+    </main>
+    
     <footer>
-        <div class="social-media">
-            <a href="https://instagram.com">Instagram</a>
-            <a href="https://facebook.com">Facebook</a>
-            <a href="https://soundcloud.com">SoundCloud</a>
-            <a href="https://spotify.com">Spotify</a>
-            <a href="https://apple.com">Apple Music</a>
-        </div>
-        <p>© 2024 GUSTAVO* | Términos y Condiciones | Política de Privacidad</p>
+        <p>© 2024 Tu Nombre | Términos y Condiciones | Política de Privacidad</p>
     </footer>
-
-    <div id="about">
-        <h2>About</h2>
-        <p>Nombre: Gustavo Adolfo Alpaca Ticona</p>
-        <p>Edad: 18 años</p>
-        <p>Ciudad: Arequipa</p>
-        <p>Email: daniela.fernandez@ucsp.edu.pe</p>
-    </div>
-
-    <div id="courses">
-        <h2>Courses</h2>
-        <p>IVU</p>
-    </div>
-
-    <div id="mates">
-        <h2>Mates</h2>
-        <a href="https://pompompudin.github.io/Daniela-Sofia-Fernandez-Galdos/">Daniela Fernández</a><br>
-        <a href="https://jaimefriedrich.github.io/Friedrich-Jaime-Rodriguez-Canales/">Jaime</a><br>
-        <a href="https://companion3-website.com">Compañero 3</a>
-    </div>
 
     <script src="script.js"></script>
 </body>
