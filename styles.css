@@ -24,27 +24,25 @@ h1 {
     padding: 20px 0;
 }
 
-/* Menú superior */
 .menu {
-    text-align: center;
+    background-color: #710404; /* Fondo principal del menú */
     padding: 10px 0;
-    background-color: var(--color-secundario);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra */
 }
+
 .menu a {
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
-    color: var(--color-texto);
-    font-weight: bold;
-    font-size: 16px;
-    border: 2px solid var(--color-principal);
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: 0.3s;
+    color: #ffffff; /* Color del texto */
+    font-family: 'Merriweather', serif; /* Fuente seria */
+    font-size: 16px; /* Tamaño más legible */
+    font-weight: 400;
+    transition: color 0.3s ease; /* Animación suave al pasar el ratón */
 }
+
 .menu a:hover {
-    background-color: var(--color-principal);
-    color: var(--color-texto);
-}
+    color: #cccccc; /* Cambia de color al pasar el ratón */
 
 /* Fondo decorativo */
 .hero {
