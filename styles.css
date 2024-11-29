@@ -8,14 +8,14 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Merriweather', serif;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-secundario);
     margin: 0;
-    padding: 0;
+    background-color: var(--color-fondo);
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
     text-align: center;
     color: var(--color-texto);
@@ -24,25 +24,27 @@ h1 {
     padding: 20px 0;
 }
 
+/* Menú superior */
 .menu {
-    background-color: #710404; /* Fondo principal del menú */
-    padding: 10px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra */
+    padding: 10px 0;
+    background-color: var(--color-secundario);
 }
-
 .menu a {
-    margin: 0 20px;
+    margin: 0 15px;
     text-decoration: none;
-    color: #ffffff; /* Color del texto */
-    font-family: 'Merriweather', serif; /* Fuente seria */
-    font-size: 16px; /* Tamaño más legible */
-    font-weight: 400;
-    transition: color 0.3s ease; /* Animación suave al pasar el ratón */
+    color: var(--color-texto);
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid var(--color-principal);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
-
 .menu a:hover {
-    color: #cccccc; /* Cambia de color al pasar el ratón */
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+}
 
 /* Fondo decorativo */
 .hero {
@@ -55,7 +57,7 @@ h1 {
     justify-content: center;
 }
 .hero h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 28px;
     color: var(--color-texto);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
