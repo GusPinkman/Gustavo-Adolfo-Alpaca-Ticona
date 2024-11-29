@@ -8,14 +8,15 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--color-secundario);
+    font-family: 'Merriweather', serif;
+    color: #333;
     margin: 0;
-    background-color: var(--color-fondo);
+    padding: 0;
+}
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     font-size: 32px;
     text-align: center;
     color: var(--color-texto);
@@ -57,7 +58,7 @@ h1 {
     justify-content: center;
 }
 .hero h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     font-size: 28px;
     color: var(--color-texto);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
