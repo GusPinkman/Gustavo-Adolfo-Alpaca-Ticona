@@ -12,7 +12,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-}
+    background-color: var(--color-fondo);
 }
 
 h1 {
@@ -23,6 +23,7 @@ h1 {
     background-color: var(--color-principal);
     margin: 0;
     padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añadido para mayor contraste */
 }
 
 /* Menú superior */
@@ -37,7 +38,7 @@ h1 {
     color: var(--color-texto);
     font-weight: bold;
     font-size: 16px;
-    border: 2px solid var(--color-principal);
+    border: 1px solid var(--color-principal); /* Reduzco el grosor */
     padding: 5px 10px;
     border-radius: 5px;
     transition: 0.3s;
@@ -52,6 +53,7 @@ h1 {
     background-image: url(https://github.com/GusPinkman/Gustavo-Adolfo-Alpaca-Ticona/blob/main/background.jpg?raw=true);
     background-size: cover;
     background-position: center;
+    background-color: var(--color-secundario); /* Se mostrará mientras carga la imagen */
     height: 300px;
     display: flex;
     align-items: center;
@@ -97,10 +99,26 @@ h1 {
     color: var(--color-texto);
 }
 .footer a {
+    display: inline-block;
     margin: 0 10px;
     color: var(--color-texto);
     text-decoration: none;
+    padding: 5px 10px;
 }
 .footer a:hover {
     color: var(--color-principal);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    .content {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
 }
