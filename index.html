@@ -3,66 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Gustavo Adolfo Alpaca Ticona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Colores principales */
+        :root {
+            --color-principal: #710404;
+            --color-secundario: #000000;
+            --color-texto: #ffffff;
+            --color-fondo: #f5f5f5;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--color-secundario);
+            margin: 0;
+            background-color: var(--color-fondo);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            text-align: center;
+            color: var(--color-texto);
+            background-color: var(--color-principal);
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        /* Menú superior */
+        .menu {
+            text-align: center;
+            padding: 10px 0;
+            background-color: var(--color-secundario);
+        }
+        .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: bold;
+            font-size: 16px;
+            border: 2px solid var(--color-principal);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            background-color: var(--color-principal);
+            color: var(--color-texto);
+        }
+
+        /* Fondo decorativo */
+        .hero {
+            background-image: url('background.jpg/1500x500'); /* Reemplaza con tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: var(--color-texto);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Contenido principal */
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 20px;
+            border-bottom: 2px solid var(--color-principal);
+            padding-bottom: 5px;
+        }
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .content a {
+            color: var(--color-principal);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pie de página */
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 12px;
+            background-color: var(--color-secundario);
+            color: var(--color-texto);
+        }
+        .footer a {
+            margin: 0 10px;
+            color: var(--color-texto);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: var(--color-principal);
+        }
+    </style>
 </head>
 <body>
-    <header>
-    
-    <video autoplay muted loop id="background-video">
-        <source src="video.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de videos.
-    </video>
-    
-    <header>
-        <h1 class="title">My Own Page</h1>
-    </header>
-    
-    <div class="menu-toggle" id="menuToggle">
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-    </div>
-    
-    <div id="sidebar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#mates">Mates</a></li>
-        </ul>
+
+    <!-- Menú superior -->
+    <div class="menu">
+        <a href="#">Menú</a>
+        <a href="#">Estudios</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
     </div>
 
-    <div class="discs-container">
-        <img src="disco1.png" alt="Disc 1">
-        <img src="disco2.png" alt="Disc 2">
-        <img src="disco3.png" alt="Disc 3">
+    <!-- Sección con imagen de fondo -->
+    <div class="hero">
+        <h2>¡Bienvenido a mi portafolio!</h2>
     </div>
 
-    <div class="section-content" id="about">
-        <h2>Datos Generales</h2>
-        <p>Nombre: Gustavo Adolfo Alpaca Ticona</p>
+    <!-- Título -->
+    <h1>Gustavo Adolfo Alpaca Ticona</h1>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h2>Información Personal</h2>
         <p>Edad: 18 años</p>
         <p>Ciudad: Arequipa</p>
-        <p>Email: <a href="mailto:gustavo.alpaca@ucsp.edu.pe">daniela.fernandez@ucsp.edu.pe</a></p>
-    </div>
+        <p>Email: <a href="mailto:gustavo.alpaca@ucsp.edu.pe">gustavo.alpaca@ucsp.edu.pe</a></p>
 
-    <div class="section-content" id="courses">
-        <h2>Courses</h2>
-        <p>IVU</p>
-    </div>
+        <h2>Estudios</h2>
+        <p>Actualmente estoy cursando la carrera de Ciencias de la Computación en la Universidad Católica San Pablo.</p>
 
-    <div class="section-content" id="mates">
-        <h2>Mates</h2>
+        <h2>Cursos</h2>
+        <p>Introducción a la vida universitaria</p>
+
+        <h2>Enlaces a Compañeros</h2>
         <p><a href="https://pompompudin.github.io/Daniela-Sofia-Fernandez-Galdos/">Daniela Fernández</a></p>
-        <p><a href="https://jaimefriedrich.github.io/Friedrich-Jaime-Rodriguez-Canales/">jaime</a></p>
-        <p><a href="companion3.html">Compañero 3</a></p>
+        <p><a href="https://jaimefriedrich.github.io/Friedrich-Jaime-Rodriguez-Canales/">Jaime</a></p>
     </div>
 
-    <footer>
-        <p>© 2024 Gustavo* | Términos y Condiciones | Política de Privacidad</p>
-    </footer>
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>© 2024 Gustavo | <a href="#">Contactos</a> | <a href="#">Redes Sociales</a></p>
+    </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
