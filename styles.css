@@ -48,7 +48,7 @@ h1 {
 
 /* Fondo decorativo */
 .hero {
-    background-image: url('https://github.com/GusPinkman/Gustavo-Adolfo-Alpaca-Ticona/blob/main/background.jpg/1500x500'); /
+    background-image: background.jpg;
     background-size: cover;
     background-position: center;
     height: 300px;
